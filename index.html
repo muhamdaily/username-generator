@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Username Generator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+</head>
+
+<body class="dark:bg-[#36393f] dark:text-white font-poppins">
+  <div class="flex justify-center items-center h-screen">
+    <div class="max-w-md w-full space-y-6">
+      <div class="bg-[#fff] dark:bg-[#40444b] shadow-lg rounded-lg p-6">
+        <h2 class="text-2xl font-bold mb-4">Username Generator</h2>
+        <div class="mb-4">
+          <input type="text" id="name"
+            class="w-full px-4 py-2 border border-[#dcddde] dark:border-[#4f545c] rounded-md focus:outline-none focus:ring-2 focus:ring-[#5865F2] focus:border-[#5865F2] dark:bg-[#36393f] dark:text-white"
+            placeholder="Enter your name">
+        </div>
+        <button id="generate"
+          class="bg-[#5865F2] hover:bg-[#7289da] text-white font-bold py-2 px-4 rounded w-full">Generate
+          Username</button>
+      </div>
+      <div id="output-card" class="bg-[#fff] dark:bg-[#40444b] shadow-lg rounded-lg p-6 hidden">
+        <div class="flex items-center justify-between mb-4">
+          <span id="generated-username" class="text-lg font-bold"></span>
+          <button id="copy-btn" class="bg-[#5865F2] hover:bg-[#7289da] text-white font-bold py-1 px-2  rounded">
+            <i class="fas fa-copy"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    class="fixed top-4 right-4 bg-[#2f3136] text-white px-4 py-2 rounded-lg hover:bg-[#4f545c] dark:bg-[#40444b] dark:hover:bg-[#4f545c]">
+    <i class="fas fa-moon"></i>
+  </button>
+  <script src="assets/script.js"></script>
+</body>
+
+</html>
